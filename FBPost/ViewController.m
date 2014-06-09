@@ -11,6 +11,12 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *post;
+@property (weak, nonatomic) IBOutlet UIView *postBG;
+@property (weak, nonatomic) IBOutlet UILabel *postUsername;
+@property (weak, nonatomic) IBOutlet UILabel *postDate;
+
+
+
 @property (weak, nonatomic) IBOutlet UITextField *comment;
 
 
@@ -38,14 +44,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     UIColor *bgColor = [UIColor colorWithRed:231.0f/255.0f green:231.0f/255.0f blue:231.0f/255.0f alpha:1.0f];
     self.view.backgroundColor = bgColor;
     
-    self.post.layer.backgroundColor = [UIColor whiteColor].CGColor;
-    self.post.layer.cornerRadius = 3;
-    self.post.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.post.layer.shadowOffset = CGSizeMake(0, 1);
-    self.post.layer.shadowOpacity = 0.1;
+    
+    self.postBG.layer.backgroundColor = [UIColor whiteColor].CGColor;
+    self.postBG.layer.cornerRadius = 3;
+    self.postBG.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.postBG.layer.shadowOffset = CGSizeMake(0, 1);
+    self.postBG.layer.shadowOpacity = 0.1;
+    
+    
+    
+    self.postUsername.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15.0];
+    
+    self.postDate.font = [UIFont fontWithName:@"HelveticaNeue" size:13.0];
     
     [self.comment setBackground:[UIImage imageNamed:@"input-background"]];
 }
