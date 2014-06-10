@@ -16,4 +16,4 @@ Complete
 
 
 Screenshot
-![Screenshot](http://full/path/to/img.jpg "Optional title")
+![Screenshot] (https://raw.githubusercontent.com/aboutshilya/ios-homework-w1-fbpost/master/record.gif)
