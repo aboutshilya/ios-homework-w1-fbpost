@@ -17,8 +17,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    
-    
     //Init all tab views here
     ViewController *NFViewController = [[ViewController alloc] init];
     UINavigationController *NFNavController = [[UINavigationController alloc] initWithRootViewController:NFViewController];

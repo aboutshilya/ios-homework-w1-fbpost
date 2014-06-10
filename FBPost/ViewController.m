@@ -32,8 +32,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        
         // Keyboard show and hide
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willShowKeyboard:) name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willHideKeyboard:) name:UIKeyboardWillHideNotification object:nil];
@@ -46,17 +44,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    //self.navigationItem.title = @"Post";
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"title-background"] forBarMetrics:UIBarMetricsDefault];
+    
+    
     UIColor *bgColor = [UIColor colorWithRed:231.0f/255.0f green:231.0f/255.0f blue:231.0f/255.0f alpha:1.0f];
     self.view.backgroundColor = bgColor;
-    
     
     self.postBG.layer.backgroundColor = [UIColor whiteColor].CGColor;
     self.postBG.layer.cornerRadius = 3;
     self.postBG.layer.shadowColor = [UIColor blackColor].CGColor;
     self.postBG.layer.shadowOffset = CGSizeMake(0, 1);
     self.postBG.layer.shadowOpacity = 0.1;
-    
-    
     
     self.postUsername.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15.0];
     
