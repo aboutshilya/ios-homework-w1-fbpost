@@ -21,6 +21,8 @@
 		D66578B01945F74300695192 /* FBPostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66578AF1945F74300695192 /* FBPostTests.m */; };
 		D66578C11946030E00695192 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66578BF1946030E00695192 /* ViewController.m */; };
 		D66578C21946030E00695192 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66578C01946030E00695192 /* ViewController.xib */; };
+		D6CDF28819467B44004951D1 /* RestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDF28619467B44004951D1 /* RestViewController.m */; };
+		D6CDF28919467B44004951D1 /* RestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDF28719467B44004951D1 /* RestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		D66578BE1946030E00695192 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D66578BF1946030E00695192 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D66578C01946030E00695192 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D6CDF28519467B44004951D1 /* RestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestViewController.h; sourceTree = "<group>"; };
+		D6CDF28619467B44004951D1 /* RestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestViewController.m; sourceTree = "<group>"; };
+		D6CDF28719467B44004951D1 /* RestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				D66578BE1946030E00695192 /* ViewController.h */,
 				D66578BF1946030E00695192 /* ViewController.m */,
 				D66578C01946030E00695192 /* ViewController.xib */,
+				D6CDF28519467B44004951D1 /* RestViewController.h */,
+				D6CDF28619467B44004951D1 /* RestViewController.m */,
+				D6CDF28719467B44004951D1 /* RestViewController.xib */,
 			);
 			path = FBPost;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CDF28919467B44004951D1 /* RestViewController.xib in Resources */,
 				D66578951945F74300695192 /* InfoPlist.strings in Resources */,
 				D66578C21946030E00695192 /* ViewController.xib in Resources */,
 				D665789D1945F74300695192 /* Images.xcassets in Resources */,
@@ -248,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CDF28819467B44004951D1 /* RestViewController.m in Sources */,
 				D66578C11946030E00695192 /* ViewController.m in Sources */,
 				D665789B1945F74300695192 /* AppDelegate.m in Sources */,
 				D66578971945F74300695192 /* main.m in Sources */,

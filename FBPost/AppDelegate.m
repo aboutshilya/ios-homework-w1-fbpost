@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "RestViewController.h"
 
 @implementation AppDelegate
 
@@ -20,15 +21,41 @@
     
     //Init all tab views here
     ViewController *NFViewController = [[ViewController alloc] init];
-    
     UINavigationController *NFNavController = [[UINavigationController alloc] initWithRootViewController:NFViewController];
-    
     NFNavController.tabBarItem.title = @"News Feed";
-    NFNavController.tabBarItem.image = [UIImage imageNamed:@"NewsFeed"];
+    NFNavController.tabBarItem.image = [UIImage imageNamed:@"news-feed"];
+    
+    RestViewController *RQViewController = [[RestViewController alloc] init];
+    
+    UINavigationController *RQNavController = [[UINavigationController alloc] initWithRootViewController:RQViewController];
+    
+    RQNavController.tabBarItem.title = @"Requests";
+    RQNavController.tabBarItem.image = [UIImage imageNamed:@"request-icon"];
+    
+    RestViewController *MSGViewController = [[RestViewController alloc] init];
+    
+    UINavigationController *MSGNavController = [[UINavigationController alloc] initWithRootViewController:MSGViewController];
+    
+    MSGNavController.tabBarItem.title = @"Messages";
+    MSGNavController.tabBarItem.image = [UIImage imageNamed:@"message-icon"];
+    
+    RestViewController *NotiViewController = [[RestViewController alloc] init];
+    
+    UINavigationController *NotiNavController = [[UINavigationController alloc] initWithRootViewController:NotiViewController];
+    
+    NotiNavController.tabBarItem.title = @"Notifications";
+    NotiNavController.tabBarItem.image = [UIImage imageNamed:@"notification-icon"];
+    
+    RestViewController *MoreViewController = [[RestViewController alloc] init];
+    
+    UINavigationController *MoreNavController = [[UINavigationController alloc] initWithRootViewController:MoreViewController];
+    
+    MoreNavController.tabBarItem.title = @"More";
+    MoreNavController.tabBarItem.image = [UIImage imageNamed:@"more-icon"];
+
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    
-    tabBarController.viewControllers = @[NFNavController];
+    tabBarController.viewControllers = @[NFNavController, RQNavController, MSGNavController, NotiNavController, MoreNavController];
     
     self.window.rootViewController = tabBarController;
     

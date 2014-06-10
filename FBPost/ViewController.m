@@ -18,6 +18,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UITextField *comment;
+@property (weak, nonatomic) IBOutlet UIView *commentContainer;
 
 
 - (void)willShowKeyboard:(NSNotification *)notification;
@@ -100,7 +101,7 @@
                           delay:0.0
                         options:(animationCurve << 16)
                      animations:^{
-                         self.comment.frame = CGRectMake(0, self.view.frame.size.height - kbSize.height - self.comment.frame.size.height, self.comment.frame.size.width, self.comment.frame.size.height);
+                         self.commentContainer.frame = CGRectMake(0, self.view.frame.size.height - kbSize.height - self.commentContainer.frame.size.height, self.commentContainer.frame.size.width, self.commentContainer.frame.size.height);
                      }
                      completion:nil];
 }
@@ -119,7 +120,7 @@
                           delay:0.0
                         options:(animationCurve << 16)
                      animations:^{
-                         self.comment.frame = CGRectMake(0, self.view.frame.size.height - self.comment.frame.size.height - 50, self.comment.frame.size.width, self.comment.frame.size.height);
+                         self.commentContainer.frame = CGRectMake(0, self.view.frame.size.height - self.commentContainer.frame.size.height - 50, self.commentContainer.frame.size.width, self.commentContainer.frame.size.height);
                      }
                      completion:nil];
 }
